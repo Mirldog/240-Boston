@@ -86,7 +86,7 @@ nav{
 }
 
 .leftBar.gg, .rightBar.gg{
-    height: 86%;
+    height: 85%;
     overflow-y: hidden;
 }
 
@@ -158,8 +158,8 @@ form{
 }
 
 .winter{
-    height: 250px;
-    width: 450px;
+    height: 300px;
+    width: 600px;
     float: right;
     border: black solid 3px;
     border-radius: 10px;
@@ -171,7 +171,7 @@ form{
     justify-content: right;
     margin-left: 50%;
     margin-right: 80px;
-    transform: translateY(-250px);
+    transform: translateY(-275px);
 }
 .sports{
     margin-top: 70px;
@@ -181,6 +181,7 @@ form{
     float: left;
     width: 45%;
     margin-left: 50px;
+    line-height: 35px;
 }
 .row{
     margin-left:20px;
@@ -191,14 +192,16 @@ form{
     clear: both;
 }
 .redsox{
+    top: 0;
+    margin-bottom: 170px;
     height: 200px;
     width: 200px;
-    margin-top: 20px;
 }
 .celtics{
     height: 200px;
     width: 200px;
     margin-top: 80px;
+    margin-bottom:150px;
 }
 .patriots{
     height: 150px;
@@ -208,7 +211,8 @@ form{
 .bruins{
     height: 150px;
     width: 150px;
-    margin-top: 60px;
+    margin-bottom: 120px;
+
 }
 .imgs{
     display: flex;
@@ -223,4 +227,12 @@ form{
     margin-right:120px;
     justify-content: center;
     text-align: center;
+    margin-top: 50px;
+    border-bottom: black 2px solid;
+    border-radius: 20px;
+}
+
+.subsection{
+    text-align: center;
+    margin-top: 15px;
 }

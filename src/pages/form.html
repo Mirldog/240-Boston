@@ -70,119 +70,103 @@
     </nav>
 </div>
 <div class="content">
-    <div class="leftBar"></div>
-    <div class="rightBar"></div>
-
-    <form method="GET" action="process.php">
-        <div class="container">
-            <div class="left">
-
-                <fieldset>
-                    <legend>Baseball Data</legend>
-                    <p>What is your favorite MLB Team?</p>
-                    <select name="selection">
-                        <option value="">--Please choose one--</option>
-                        <option value="DiamondBacks">Arizona DiamondBacks</option>
-                        <option value="Braves">Atlanta Braves</option>
-                        <option value="Orioles">Baltimore Orioles</option>
-                        <option value="Red Sox">Boston Red Sox</option>
-                        <option value="Cubs">Chicago Cubs</option>
-                        <option value="White Sox">Chicago White Sox</option>
-                        <option value="Reds">Cincinnati Reds</option>
-                        <option value="Indians">Cleveland Indians</option>
-                        <option value="Rockies">Colorado Rockies</option>
-                        <option value="Tigers">Detroit Tigers</option>
-                        <option value="Astros">Houston Astros</option>
-                        <option value="Royals">Kansas City Royals</option>
-                        <option value="Dodgers">LA Dodgers</option>
-                        <option value="Angels">LA Angels</option>
-                        <option value="Marlins">Miami Marlins</option>
-                        <option value="Brewers">Milwaukee Brewers</option>
-                        <option value="Twins">Minnesota Twins</option>
-                        <option value="Mets">New York Mets</option>
-                        <option value="Yankees">New York Yankees</option>
-                        <option value="Phillies">Philadelphia Phillies</option>
-                        <option value="Pirates">Pittsburgh Pirates</option>
-                        <option value="Athletics">Oakland Athletics</option>
-                        <option value="Mariners">Seattle Mariners</option>
-                        <option value="Padres">San Diego Padres</option>
-                        <option value="Giants">San Francisco Giants</option>
-                        <option value="Cardinals">St. Louis Cardinals</option>
-                        <option value="Rays">Tampa Bay Rays</option>
-                        <option value="Rangers">Texas Rangers</option>
-                        <option value="Blue Jays">Toronto Blue Jays</option>
-                        <option value="Nationals">Washington Nationals</option>
-                    </select>
-
-                    <p>Favorite Player's Name</p>
-                    <input type="text" name="player" placeholder="Name">
-
-                    <p>Favorite Players Number</p>
-                    <input type="number" name="number" placeholder="Number">
-
-                    <p>Have you gone to a game?</p>
-                    <div class="indent">
-                        <label for="yes"> Yes:<input type="radio" id="yes" name="attended" value="Yes"/></label>
-                        <label for="no"> No:<input type="radio" id="no" name="attended" value="Bo" /></label>
-                    </div>
-
-
-                    <p>Where have you sat?</p>
-                    <div class="spot">
-                        <label for="Left">Left Field:<input type="checkbox" id="Left" name="position" /></label>
-
-                        <label for="Right">Right Field:<input type="checkbox" id="Right" name="position" /></label>
-
-                        <label for="Center">Center Field:<input type="checkbox" id="Center" name="position" /></label>
-
-                        <label for="Foul">Foul Territory:<input type="checkbox" id="Foul" name="position" /></label>
-
-                        <label for="Home">Behind Home Plate:<input type="checkbox" id="Home" name="position" /></label>
-                    </div>
-
-
-                    <div>
-                        <p class="rating">How would you rate your experience?</p>
-                        <input type="range" id="myRange" min="0" max="5" step="1" list="volsettings"/>
-                        <datalist id="volsettings">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </datalist>
-                    </div>
-
-
-                    <p>Please describe an exciting moment that happened during the game</p>
-                    <textarea name="ta"></textarea>
-                </fieldset>
-            </div>
-
-            <div class="right">
-                <fieldset>
-                    <legend>Personal Data</legend>
-
-                    <p>Your Name :</p>
-                    <input id="name" type="text" name="name" placeholder="Your Full Name" />
-
-                    <p>Your Email :</p>
-                    <input id="email" type="email" name="email" placeholder="Valid Email Address" />
-
-                    <p>Birthday:</p>
-                    <input id="date" type="date" name="date" placeholder="Date" />
-
-                </fieldset>
-            </div>
-
-            <div class="button-container">
-                <input type="submit" class="button" value="Send" />
-            </div>
-
+    <div class="leftBar gg"></div>
+    <div class="rightBar gg"></div>
+    <div class="dce">
+        <div class="sportsIntro">
+            <h1>
+                Survey
+            </h1>
+            <p>
+                Please fill out this form to let me know how your visit to Boston was!
+            </p>
         </div>
 
-    </form>
+        <form method="GET" action="process.php">
+            <div class="container">
+                <div class="left">
+
+                    <fieldset>
+                        <legend>Boston Data</legend>
+                        <p>What your favorite attraction?</p>
+                        <select name="selection">
+                            <option value=null>--Please choose one--</option>
+                            <option value="Fanueil Hall">Fanueil Hall</option>
+                            <option value="Fenway Park">Fenway Park</option>
+                            <option value="TD Garden">TD Garden</option>
+                            <option value="Freedom Trail">Freedom Trail</option>
+                            <option value="Aquarium">Aquarium</option>
+                            <option value="Prudential Center">Prudential Center</option>
+                        </select>
+
+                        <p>Favorite Attraction</p>
+                        <input type="text" name="attraction" placeholder="Name">
+
+
+                        <p>Have you gone to a Sports game?</p>
+                        <div class="indent">
+                            <label for="yes"> Yes:<input type="radio" id="yes" name="attended" value="Yes"/></label>
+                            <label for="no"> No:<input type="radio" id="no" name="attended" value="Bo" /></label>
+                        </div>
+
+
+                        <p>Where have you sat?</p>
+                        <div class="spot">
+                            <label for="Left">Left Field:<input type="checkbox" id="Left" name="position" /></label>
+
+                            <label for="Right">Right Field:<input type="checkbox" id="Right" name="position" /></label>
+
+                            <label for="Center">Center Field:<input type="checkbox" id="Center" name="position" /></label>
+
+                            <label for="Foul">Foul Territory:<input type="checkbox" id="Foul" name="position" /></label>
+
+                            <label for="Home">Behind Home Plate:<input type="checkbox" id="Home" name="position" /></label>
+                        </div>
+
+
+                        <div>
+                            <p class="rating">How would you rate your experience?</p>
+                            <input type="range" id="myRange" min="0" max="5" step="1" list="volsettings"/>
+                            <datalist id="volsettings">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </datalist>
+                        </div>
+
+
+                        <p>Please your favorite moment in Boston</p>
+                        <textarea name="ta"></textarea>
+                    </fieldset>
+                </div>
+
+                <div class="right">
+                    <fieldset>
+                        <legend>Personal Data</legend>
+
+                        <p>Your Name :</p>
+                        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+
+                        <p>Your Email :</p>
+                        <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+
+                        <p>Date Visited</p>
+                        <input id="date" type="date" name="date" placeholder="Date" />
+
+                    </fieldset>
+                </div>
+
+                <div class="button-container">
+                    <input type="submit" class="button" value="Send" />
+                </div>
+
+            </div>
+
+        </form>
+    </div>
 </div>
 
 </body>
