@@ -235,4 +235,29 @@ form{
 .subsection{
     text-align: center;
     margin-top: 15px;
+    border-bottom: #b7b7b7 solid 1px;
+}
+
+.stateHouse{
+    margin-top: 40px;
+    height: 250px;
+    width: 450px;
+    border: black solid 3px;
+    border-radius: 20px ;
+}
+
+.stateHouse.harbor{
+    margin-top: 40px;
+}
+
+.freedomTrail{
+    height: 150px;
+    width: 300px;
+    border: black solid 2px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.spacing{
+    margin-top: 70px;
 }
