@@ -6,19 +6,20 @@ function validateForm() {
     }
 }
 
-function changeImage(str) {
+/*
+These funcitons change the images on the food page to show the restaurant menus
+ */
 
-    if(str ==="34"){
-        pic = document.getElementById("34").src;
-        console.log(pic);
-        if (pic === "http://localhost:63342/Boston/src/assets/img/34.jpg")
-        {
-            pic = "http://localhost:63342/Boston/src/assets/img/34-menu.jpg";
-        }
-        else
-        {
-            document.getElementById("imgClickAndChange").src = "../assets/img/34.jpg";
-        }
-    }
+function changeImageOne() {
+    document.getElementById("34").src = "http://localhost:63342/Boston/src/assets/img/34-menu.jpg";
 
+}
+
+function changeImageTwo() {
+    document.getElementById("sor").src = "http://localhost:63342/Boston/src/assets/img/sorellina-menu.PNG";
+
+}
+
+function changeImageThree() {
+    document.getElementById("reg").src = "http://localhost:63342/Boston/src/assets/img/regina-menu.jpg";
 }
