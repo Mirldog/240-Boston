@@ -27,7 +27,7 @@ include('header.php');
             </p>
         </div>
 
-        <form method="GET" action="process.php">
+        <form method="GET" onclick="return formValidate()" action="process.php">
             <div class="container">
                 <div class="left">
 
@@ -84,7 +84,7 @@ include('header.php');
 
 
                         <p>Please write out your favorite moment in Boston</p>
-                        <textarea name="ta"></textarea>
+                        <textarea name="ta" id="ta"></textarea>
                     </fieldset>
                 </div>
 
@@ -112,6 +112,9 @@ include('header.php');
 
         </form>
     </div>
+    <?php
+    include('footer.php')
+    ?>
 </div>
 
 </body>

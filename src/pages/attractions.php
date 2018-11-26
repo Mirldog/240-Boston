@@ -67,6 +67,7 @@ include('header.php');
                     you all the way from the State House to Paul Revere's very resting place. The Freedom Trail connects
                     you to to 16 different historical sites on at 2.5 mile route.
                 </p>
+                <br><br>
                 <h2>
                     Stadiums
                 </h2>
@@ -79,6 +80,7 @@ include('header.php');
                     relax (granted you're willing to drop 13 dollars on a beer!). Most notably, the park features a 38
                     foot wall called "The Green Monster", the highest wall in all of baseball.
                 </p>
+                <br><br>
                 <h3 class="subsection spacing">
                     TD Garden
                 </h3>
@@ -91,13 +93,16 @@ include('header.php');
             <div class="column">
                 <img src="../assets/img/aquarium.jpg" alt="aquarium" title="Aquarium" class="stateHouse">
                 <img src="../assets/img/fineArts.jpg" alt="fineArts" title="Fine Arts" class="stateHouse">
-                <img src="../assets/img/freedom-trail.jpg" alt="freedomTrail" title="Freedom Trail" class="freedomTrail">
+                <img src="../assets/img/freedom-trail.jpg" alt="freedomTrail" title="Freedom Trail" class="stateHouse">
                 <img src="../assets/img/fenway.jpg" alt="fenway" title="Fenway" class="stateHouse">
-                <img src="../assets/img/celtics.jpg" alt="celtics" title="Celtics" class="freedomTrail">
+                <img src="../assets/img/celtics.jpg" alt="celtics" title="Celtics" class="stateHouse">
 
             </div>
         </div>
     </div>
+    <?php
+    include('footer.php')
+    ?>
 </div>
 
 </body>

@@ -141,6 +141,9 @@ include('header.php');
                 <a href="grading.php">Link to Grade justification</a>
             </div>
         </div>
+        <?php
+        include('footer.php')
+        ?>
     </div>
 </div>
 </body>

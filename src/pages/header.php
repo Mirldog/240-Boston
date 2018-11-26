@@ -56,6 +56,9 @@
                 <li class="nav-item auto">
                     <a class="nav-link navItem noBorder" href="resources.php">Resources</a>
                 </li>
+                <li class="nav-item auto">
+                    <a class="nav-link navItem noBorder" href="grading.php">Grading</a>
+                </li>
             </ul>
         </div>
     </nav>

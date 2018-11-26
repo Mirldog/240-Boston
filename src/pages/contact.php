@@ -31,6 +31,9 @@ include('header.php');
             </p>
         </div>
     </div>
+    <?php
+    include('footer.php')
+    ?>
 </div>
 
 </body>

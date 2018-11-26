@@ -16,6 +16,8 @@ require "../../../../dbConnect.inc";
 //                && $_GET['food'] != ''&& $_GET['attended'] != '' && $_GET['position'] != ''&& $_GET[''] != 'exp'
 //                && $_GET['ta'] != '') {
 
+// put data into database
+
                 $stmt = $mysqli->prepare("insert into bostonxp (favorite, food, sports,
                           restaurant, rate, moment, name, email, date) VALUES (?,?,?,?,?,?,?,?,?)");
                 $stmt->bind_param("sssssssss", $_GET['selection'], $_GET['attraction'],$_GET['attended'],$_GET['position'],
@@ -23,30 +25,27 @@ require "../../../../dbConnect.inc";
                 $stmt->execute();
                 $stmt->close();
 
+                $visitor = test_input($_GET['name']);
+                $date = test_input($_GET['date']);
+                $email = test_input($_GET['email']);
+                $food = test_input($_GET['attraction']);
+                $favorite = test_input($_GET['selection']);
+                $sports = test_input($_GET['attended']);
+                $restaurant = test_input($_GET['position']);
+                $rate = test_input($_GET['exp']);
+                $moment = test_input($_GET['ta']);
 
-           // }
-//        }
-//    }
-
-
+                $destination_email = "kxm9453@rit.edu";
 //
-//    $visitor = test_input($_POST['name']);
-//    $date = test_input($_POST['date']);
-//    $fav = test_input($_POST['fav']);
-//    $food = test_input($_POST['food']);
-//
-//
-//    $destination_email = "kxm9453@rit.edu";
-//
-//    $email_subject = "Boston, MA - visitor";
-//    $email_body = "Visitor name: $visitor\n";
-//    $email_body .="Date: $date\n";
-//    $email_body .="Favorite Attraction: $fav\n";
-//    $email_body .="Food Eaten: $food\n";
-//
-//    mail($destination_email, $email_subject, $email_body);
-//
-//    echo 'Data Submitted'
+    $email_subject = "Boston, MA - visitor";
+    $email_body = "Visitor name: $visitor\n";
+    $email_body .="Date: $date\n";
+    $email_body .="Email: $email\n";
+    $email_body .="Favorite Attraction: $favorite\n";
+    $email_body .="Food Eaten: $food\n";
+    $email_body .="Rate $rate\n";
+// send email
+    mail($destination_email, $email_subject, $email_body);
 
     ?>
 <!DOCTYPE html>
@@ -72,6 +71,9 @@ include('header.php');
                 Thank you for completing the form.
             </h1>
         </div>
+        <?php
+        include('footer.php')
+        ?>
     </div>
 </div>
 </body>

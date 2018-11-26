@@ -89,6 +89,9 @@ include('header.php');
 
             <button type="submit">Submit</button>
         </form>
+        <?php
+        include('footer.php')
+        ?>
     </div>
 
 

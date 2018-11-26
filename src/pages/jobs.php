@@ -74,6 +74,9 @@ include('header.php');
                 <img src="../assets/img/bcg.jpg" alt="bcg" title="BCG" class="stateHouse">
             </div>
         </div>
+        <?php
+        include('footer.php')
+        ?>
     </div>
 </div>
 </body>
