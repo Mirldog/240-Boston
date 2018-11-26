@@ -317,13 +317,14 @@ form{
     height: 500px;
     width: 700px;
 }
-
 .foot{
-    margin-bottom: 30px;
-    margin-left: 48%;
+    display: none;
 }
 
-@media {
-
+@media only screen and (max-width: 600px){
+    body.img{
+        width: 200px;
+        height: 250px;
+    }
 }
 
