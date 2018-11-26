@@ -297,7 +297,9 @@ form{
 .com-form{
     margin-left: 380px;
     margin-top: 10px;
-
 }
 
-
+.volset{
+    background-color: white;
+    border-radius: 10px;
+}

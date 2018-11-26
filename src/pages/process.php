@@ -8,23 +8,45 @@
     }
 
 
-    $visitor = test_input($_POST['name']);
-    $date = test_input($_POST['date']);
-    $fav = test_input($_POST['fav']);
-    $food = test_input($_POST['food']);
+
+require "../../../../dbConnect.inc";
+//    if ($mysqli) {
+//        if (isset($_GET['name'])) {
+//            if ($_GET['name'] != '' && $_GET['email'] != '' && $_GET['date'] != ''&& $_GET['attraction'] != ''
+//                && $_GET['food'] != ''&& $_GET['attended'] != '' && $_GET['position'] != ''&& $_GET[''] != 'exp'
+//                && $_GET['ta'] != '') {
+
+                $stmt = $mysqli->prepare("insert into bostonxp (favorite, food, sports,
+                          restaurant, rate, moment, name, email, date) VALUES (?,?,?,?,?,?,?,?,?)");
+                $stmt->bind_param("sssssssss", $_GET['selection'], $_GET['attraction'],$_GET['attended'],$_GET['position'],
+                                    $_GET['exp'],$_GET['ta'],$_GET['name'],$_GET['email'],$_GET['date']);
+                $stmt->execute();
+                $stmt->close();
 
 
-    $destination_email = "kxm9453@rit.edu";
+           // }
+//        }
+//    }
 
-    $email_subject = "Boston, MA - visitor";
-    $email_body = "Visitor name: $visitor\n";
-    $email_body .="Date: $date\n";
-    $email_body .="Favorite Attraction: $fav\n";
-    $email_body .="Food Eaten: $food\n";
 
-    mail($destination_email, $email_subject, $email_body);
-
-    echo 'Data Submitted'
+//
+//    $visitor = test_input($_POST['name']);
+//    $date = test_input($_POST['date']);
+//    $fav = test_input($_POST['fav']);
+//    $food = test_input($_POST['food']);
+//
+//
+//    $destination_email = "kxm9453@rit.edu";
+//
+//    $email_subject = "Boston, MA - visitor";
+//    $email_body = "Visitor name: $visitor\n";
+//    $email_body .="Date: $date\n";
+//    $email_body .="Favorite Attraction: $fav\n";
+//    $email_body .="Food Eaten: $food\n";
+//
+//    mail($destination_email, $email_subject, $email_body);
+//
+//    echo 'Data Submitted'
 
     ?>
 <!DOCTYPE html>

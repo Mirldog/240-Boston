@@ -27,7 +27,7 @@ include('header.php');
             </p>
         </div>
 
-        <form method="POST" action="process.php">
+        <form method="GET" action="process.php">
             <div class="container">
                 <div class="left">
 
@@ -71,14 +71,14 @@ include('header.php');
 
                         <div>
                             <p class="rating">How would you rate your experience?</p>
-                            <input type="range" id="myRange" min="0" max="5" step="1" list="volsettings"/>
-                            <datalist id="volsettings">
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <input type="range" name="exp" id="myRange" min="0" max="5" step="1" list="volsettings"/>
+                            <datalist id="volsettings" class="volset">
+                                <option value=0>0</option>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
                             </datalist>
                         </div>
 
