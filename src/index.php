@@ -39,33 +39,36 @@
                         <a class="nav-link navItem" href="">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem" href="pages/area.html">Area</a>
+                        <a class="nav-link navItem" href="pages/area.php">Area</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem" href="pages/attractions.html">Attractions</a>
+                        <a class="nav-link navItem" href="pages/attractions.php">Attractions</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem" href="pages/food.html">Food</a>
+                        <a class="nav-link navItem" href="pages/food.php">Food</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem" href="pages/history.html">History</a>
+                        <a class="nav-link navItem" href="pages/history.php">History</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem" href="pages/jobs.html">Jobs</a>
+                        <a class="nav-link navItem" href="pages/jobs.php">Jobs</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem" href="pages/sports.html">Sports</a>
+                        <a class="nav-link navItem" href="pages/sports.php">Sports</a>
+                    </li>
+                    <li class="nav-item auto">
+                        <a class="nav-link navItem" href="pages/comments.php">Comments</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto last">
                     <li class="nav-item auto">
-                        <a class="nav-link navItem noBorder" href="pages/form.html">Form</a>
+                        <a class="nav-link navItem noBorder" href="pages/form.php">Form</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem noBorder" href="pages/contact.html">Contact</a>
+                        <a class="nav-link navItem noBorder" href="pages/contact.php">Contact</a>
                     </li>
                     <li class="nav-item auto">
-                        <a class="nav-link navItem noBorder" href="pages/resources.html">Resources</a>
+                        <a class="nav-link navItem noBorder" href="pages/resources.php">Resources</a>
                     </li>
                 </ul>
             </div>

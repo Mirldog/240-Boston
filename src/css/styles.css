@@ -261,3 +261,43 @@ form{
 .spacing{
     margin-top: 70px;
 }
+
+.comments{
+    float: left;
+    margin-left: 20px;
+    border: black 2px solid;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.comment-title{
+    margin-left: 20px;
+}
+.comment-sub{
+    margin-left: 20px;
+}
+
+.comment-section{
+    list-style-type: none;
+    width: 300px;
+}
+
+.name{
+    font-size: 24px;
+    font-style: italic;
+    border-bottom: black 1px solid;
+}
+
+.comment{
+    font-size: 18px;
+    margin: 10px;
+}
+.com-form{
+    margin-left: 380px;
+    margin-top: 10px;
+
+}
+
+

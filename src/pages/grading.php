@@ -5,6 +5,9 @@
     <title>Grading</title>
 </head>
 <body>
+<?php
+ include('header.php');
+?>
     <img src="../assets/img/rubric.PNG">
 
     <p>

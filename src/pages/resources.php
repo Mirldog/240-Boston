@@ -11,64 +11,9 @@
 
 <body>
 
-<div class="navBar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img class="icon" src="../assets/img/boston_icon.png"/>
-        <a class="navbar-brand" href="#">
-            <table class="titleBlock">
-                <tr>
-                    <td class="title">
-                        Boston
-                    </td>
-                </tr>
-                <tr>
-                    <td class="index title">
-                        Mass.
-                    </td>
-                </tr>
-            </table>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse all" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="area.html">Area</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="attractions.html">Attractions</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="food.html">Food</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="history.html">History</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="jobs.html">Jobs</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem" href="sports.html">Sports</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav mr-auto last">
-                <li class="nav-item auto">
-                    <a class="nav-link navItem noBorder" href="form.html">Form</a>
-                </li>
-                <li class="nav-item auto">
-                    <a class="nav-link navItem noBorder" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item active auto">
-                    <a class="nav-link navItem noBorder" href="resources.html">Resources<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<?php
+include('header.php');
+?>
 <div class="content">
     <div class="leftBar gg"></div>
     <div class="rightBar gg"></div>
@@ -193,7 +138,7 @@
                 </p>
             </div>
             <div class="column">
-                <a href="grading.html">Link to Grade justification</a>
+                <a href="grading.php">Link to Grade justification</a>
             </div>
         </div>
     </div>

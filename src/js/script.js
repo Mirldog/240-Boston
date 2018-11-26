@@ -23,3 +23,20 @@ function changeImageTwo() {
 function changeImageThree() {
     document.getElementById("reg").src = "http://localhost:63342/Boston/src/assets/img/regina-menu.jpg";
 }
+
+function commentValidate(){
+    var name = document.getElementById('name');
+    var comment = document.getElementById('comment');
+    if(name.value = ''){
+        name.style.border = 'red 2px solid';
+        name.style.borderRadius = '5px';
+        name.style.backgroundColor = 'pink'
+        return false;
+    }
+    if(comment.value = ''){
+        comment.style.border = 'red 2px solid';
+        comment.style.borderRadius = '5px';
+        comment.style.backgroundColor = 'pink'
+        return false;
+    }
+}
